@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+
+    <section class="memory-game">
+        
+    </section>
+
+    
+    <section class="option">
+        <div class="selectCatIc">
+            <p data-tooltip="Сlick Select to apply">Icon category <select id="selectCategoryIcon"  >
+                <option value="animals"selected>&nbsp;&nbsp;Animals&nbsp;</option>
+                <option value="fruits" >&nbsp;&nbsp;Fruits and vegetables&nbsp;</option>
+            </select></p>
+        </div>
+
+        <div class="selectBS">
+           
+            <p>Board size: <select id="selectBoardSize">
+                <option value="12">&nbsp;&nbsp;12&nbsp;</option>
+                <option value="16" selected>&nbsp;&nbsp;16&nbsp;</option>
+                <option value="20">&nbsp;&nbsp;20&nbsp;</option>
+                <option value="30">&nbsp;&nbsp;30&nbsp;</option>
+                <option value="36">&nbsp;&nbsp;36&nbsp;</option>
+                <option value="42">&nbsp;&nbsp;42&nbsp;</option>
+            </select></p>
+           <p><button id="changeBoard">Select</button></p>
+        </div>
+        <div class="stopwatch">
+            <p>Stopwatch: <span>00:00:00</span> </p>
+        </div>
+        <div class="records">
+            <h3>Best time</h3>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <button id="clearRecList"> Clear records list</button>
+        </div>
+        <div class="resultWindow hidden">
+            <h2>You Win</h2>
+
+            <table >
+                <tr>
+                    <td>Your time: </td>
+                    <td> <p id="winnerTime"></p></td> 
+                </tr>
+                <tr>
+                    <td><p>Board size: </p></td>
+                    <td><p id="winnerBoardSize"></p></td>
+                </tr>
+                <tr>
+                    <td>Name: </td>
+                    <td><input id="winnerName" type="text"></td>
+                </tr>
+            </table>
+            
+            <button id="btnSendResult">Save result</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script>
+        
+       
+    </script>
+    
+        
+    
+</body>
+</html>
